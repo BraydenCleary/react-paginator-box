@@ -60,6 +60,10 @@ class PaginationBox extends Component {
         this.pageCount = Math.ceil(this.items / this.limit);
         this.halfDisplay = this.display / 2;
 
+        console.log(pageCount);
+        console.log(this.items);
+        console.log(this.limit);
+
         (!this.display || this.display < 3) ? this.display = 5 : "";
 
         if (this.pageCount > 0) {
